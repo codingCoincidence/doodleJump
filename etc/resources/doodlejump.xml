@@ -1,0 +1,22 @@
+<launch4jConfig>
+  <headerType>gui</headerType>
+  <jar>lib/doodlejump.jar</jar>
+  <outfile>../../build/DoodleJump.exe</outfile>
+  <errTitle>doodlejump</errTitle>
+  <chdir>.</chdir>
+  <customProcName>true</customProcName>
+  <icon>doodle.ico</icon>
+  <dontWrapJar>true</dontWrapJar>
+  <jre>
+    <path>jre</path>
+   <!-- <opt>-Xrunjdwp:transport=dt_socket,address=8789,server=y,suspend=y</opt> -->
+   <!-- english only: <opt>-Xmx3g -Duser.language=en</opt> -->
+    <opt>-Xmx3g -Duser.language=de</opt>
+  </jre>
+  <!--  <splash>
+    <file>splash.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>60</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>-->
+</launch4jConfig>
