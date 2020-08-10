@@ -28,6 +28,7 @@ public class GlobalElements extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
+	static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	static GameFrame gameFrame;
 	static Draw draw;
 	static InitialPlatform initialPlatform;
@@ -55,7 +56,7 @@ public class GlobalElements extends JPanel {
 	static JFrame playFrame;
 	static final Border border = new LineBorder(Color.red.darker(), 2);
 	static final Font font = new Font(Font.SANS_SERIF, Font.BOLD, 18);
-	static int screenWidth = 700, screenHeight = 1000;
+	static int screenWidth = (int)(screenSize.width / 2.5), screenHeight =  (int) (screenSize.height - 100);
 	static boolean gamePaused = false;
 	static Image gameOverImage;
 

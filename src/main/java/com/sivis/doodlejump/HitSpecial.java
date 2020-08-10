@@ -84,7 +84,7 @@ public class HitSpecial implements ActionListener {
                 && (GlobalElements.doodleY + 50 <= GlobalElements.monsterY + 100) && (GlobalElements.score > 20)) {
         	
         	try {
-        		Thread.sleep(180);                		
+        		Thread.sleep(100);                		
         	} catch (Exception exception) {
         		exception.printStackTrace();                		
         	}
